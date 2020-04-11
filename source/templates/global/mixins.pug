@@ -3,11 +3,25 @@ mixin title-with-bottom-line(title, text)
         h2.title.title__header=title
         .title__text=text
 
-mixin list-with-steps(title,image__src,text)
-    li.approach__item
-        .approach__image
-            img.approach__picture(src=image__src alt="picture")
-            .approach__step step
-        .approach__text
-            .approach__title=title
-            p.approach__description=text
+mixin list-with-steps(className,title,image__src,text)
+    li(class=className+'__item')
+        div(class=className+'__image')
+            img(class=className+'__picture' src=image__src alt="picture")
+            div(class=className+'__step') step
+        div(class=className+'__text')
+            div(class=className+'__title')=title
+            p(class=className+'__description')=text
+
+mixin list-without-odd(className,title,image__scr,text)
+    li(class=className+'__item '+className+'__item--name')
+        div(class=className+'__name') Project
+        div(class=className+'__description') Fasebook marketing
+    li(class=className+'__item')
+        img(class=className+'__picture' src=image__scr alt="picture")
+
+mixin list-without-even(className,title,image__scr,text)
+    li(class=className+'__item')
+        img(class=className+'__picture' src=image__scr alt="picture")
+    li(class=className+'__item '+className+'__item--name')
+        div(class=className+'__name') Project
+        div(class=className+'__description') Fasebook marketing

@@ -21,7 +21,7 @@
       text-align: right;
 
       .approach__text {
-        padding: 70px 90px;
+        padding: 70px 90px 55px 70px;;
       }
 
       .approach__step{
@@ -55,7 +55,7 @@
 
   &__step{
     @include centerer-y();
-    right: -58px;
+    right: -50px;
     width: 103px;
     height: 103px;
     padding-top: 10px;
