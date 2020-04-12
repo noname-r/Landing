@@ -3,6 +3,11 @@ mixin title-with-bottom-line(title, text)
         h2.title.title__header=title
         .title__text=text
 
+mixin title-without(title, text)
+    .title
+        h2.title.title__header=title
+        .title__text=text
+
 mixin list-with-steps(className,title,image__src,text)
     li(class=className+'__item')
         div(class=className+'__image')
