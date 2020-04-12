@@ -2,10 +2,9 @@ section.form-section
     .container
         +title-without("Get Your Facebook Analysis Now", "Enter your details below")
 
-        .btn-down: a.arrow-down: i.fa.fa-angle-down
+        .btn-down: a.arrow-down(href="form.html" target="_blank"): i.fa.fa-angle-down
 
-        .form-container
-            //.is-hidden
+        .form-container.is-hidden
             form(method="post" action="#").form
                 button(type="button").form__close-button X
                 .form__text.
