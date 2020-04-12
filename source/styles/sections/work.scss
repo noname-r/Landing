@@ -3,6 +3,10 @@
   background-color: $color-button-red;
   color: #fff;
 
+  @media (max-width: 960px) {
+    padding: 20px;
+  }
+
   &__list{
     display: flex;
     flex-wrap: wrap;

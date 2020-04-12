@@ -3,6 +3,10 @@
     padding: 88px 0 83px;
     text-align: center;
     background: #2a2a2a;
+
+    @media (max-width: 960px) {
+      padding: 20px;
+    }
   }
 
   &__bottom{
@@ -12,7 +16,7 @@
   }
 
   &__title {
-    margin-bottom: 20px;
+    margin-bottom: 31px;
     font-size: 1.8125rem;
     color: #fff;
     font-family: $ff-main-bold;
@@ -34,7 +38,7 @@
   }
 
   &__links{
-    margin-bottom: 35px;
+    margin-bottom: 53px;
     color: #fff;
 
     .fa{
@@ -53,6 +57,10 @@
   &__field{
     width: 67%;
     margin: 0 auto 27px;
+
+    @media (max-width: 700px) {
+      width: 80%;
+    }
   }
 
   &__input{
